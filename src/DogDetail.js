@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./DogList.css";
+import "./DogDetail.css";
 
 class DogDetail extends Component {
   render() {
     const { dog } = this.props;
     return (
       <div className="DogDetail row justify-content-center mt-5">
-        <div className="col-8 col-lg-3">
+        <div className="col-8 col-lg-5">
           <div className="DogDetails-card card">
             <img className="card-img-top" src={dog.src} alt={dog.name} />
             <div className="card-body">
